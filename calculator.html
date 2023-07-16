@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://127.0.0.1:5500/day1/javascript/calculator.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./calculator_files/claculator.css">
+    <script src="./calculator_files/calculator.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1033.0" data-gr-ext-installed="">
+    <div class="main">
+        <div class="cla">
+            <input type="text" id="screen">
+            <div class="button">
+                
+                <div class="row">
+                    <button onclick="buttonclick(9)" class="buttonDisplay ">9</button>
+                    <button onclick="buttonclick(8)" class="buttonDisplay ">8</button>
+                    <button onclick="buttonclick(7)" class="buttonDisplay ">7</button>
+                    <button onclick="eualto()" class="equal">=</button>
+                    <button onclick="buttonclick(6)" class="buttonDisplay ">6</button>
+                    <button onclick="buttonclick(5)" class="buttonDisplay ">5</button>
+                    <button onclick="buttonclick(4)" class="buttonDisplay ">4</button>
+                    <button onclick="buttonclick(&#39;+&#39;)" class="buttonDisplay ">+</button>
+                    <button onclick="buttonclick(3)" class="buttonDisplay ">3</button>
+                    <button onclick="buttonclick(2)" class="buttonDisplay ">2</button>
+                    <button onclick="buttonclick(1)" class="buttonDisplay ">1</button>
+                    <button onclick="buttonclick(&#39;-&#39;)" class="buttonDisplay ">-</button>
+                    <button onclick="buttonclick(0)" class="buttonDisplay ">0</button>
+                    <button onclick="buttonclick(&#39;*&#39;)" class="buttonDisplay ">*</button>
+                    <button onclick="buttonclick(&#39;/&#39;)" class="buttonDisplay ">/</button>
+                <button onclick="clearDissplay()" class="clearall">clear</button>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+
+</div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

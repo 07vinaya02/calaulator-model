@@ -1,0 +1,48 @@
+.cla {
+    width: 350px;
+    height: 600px;
+    background-color: rgb(55, 65, 65);
+    margin-left: 30%;
+    border-radius: 2%;
+    box-shadow: 1px 2px 3px 4px;
+}
+
+#screen {
+    width: 300px;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 15px;
+    pointer-events: none;
+    border-radius: 10%;
+    box-shadow: 1px 2px 3px 2px;
+    background-color: rgb(13, 99, 66);
+}
+
+.buttonDisplay {
+    width: 54px;
+    height: 40px;
+    margin-left: 23px;
+    margin-top: 83px;
+    box-shadow: 1px 2px 2px 2px;
+    border-radius:4%%;
+}
+.clearall{
+    width: 54px;
+    height: 40px;
+    margin-left: 23px;
+    margin-top: 83px;
+    box-shadow: 1px 2px 2px 2px;
+    border-radius:4%;
+    background-color: rgb(226, 107, 28);
+}
+
+.equal {
+    width: 54px;
+    height: 40px;
+    margin-left: 23px;
+    margin-top: 83px;
+    box-shadow: 1px 2px 2px 2px;
+    border-radius:4%;
+    background-color:rgb(226, 107, 28);
+
+}
